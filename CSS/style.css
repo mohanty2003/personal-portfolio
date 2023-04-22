@@ -1,0 +1,522 @@
+/* Initial File */
+
+body {
+    background-color: #0e141b;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+/* Loader Start*/
+
+.loading {
+    position: fixed;
+    left: 0%;
+    top: 40%;
+    width: 100%;
+    height: 100%;
+    background-color: #0e141b;
+    z-index: 0;
+}
+
+.text-loader {
+    text-align: center;
+    font-family: Consolas, Courier, monospace;
+    font-size: 60px;
+    text-shadow: 0 0 15px rgb(255, 0, 0);
+}
+
+.glow {
+    color: #f00;
+    text-shadow: 0px 0px 10px #f00;
+}
+
+span {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+@media screen and (max-width: 500px) {
+    .text-loader {
+        font-size: 40px;
+    }
+}
+
+/* Loader Ends*/
+
+/* Main Start */
+
+main {
+    display: none;
+    animation: fadeInAnimation ease 2s;
+    animation-fill-mode: forwards;
+    background-color: #0e141b;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Main Ends */
+
+/* Navbar */
+
+.navbar {
+    position: relative;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.nav-left {
+    float: left;
+}
+
+.logo-text {
+    color: #39ff14;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.nav-right {
+    margin-top: 12px;
+    float: right;
+}
+
+.nav-lists {
+    list-style-type: none;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.nav-lists li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.nav-lists li a {
+    color: #39ff14;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-lists li a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+    .logo-text {
+        display: none;
+    }
+    .nav-right {
+        float: none;
+        margin: 0 auto;
+        top: 50%;
+        transform: translate(15%, -50%);
+    }
+    .mb-nr {
+        transform: translate(5%, -50%) !important;
+    }
+    .nav-lists li a {
+        font-size: 12px;
+    }
+}
+
+/* Navbar Ends */
+
+/* Header Starts */
+
+.header {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -40%)
+}
+
+.header-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.header .header-text {
+    margin-top: -50px;
+    color: #39ff14;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header .header-text .title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header .header-text .sub-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 700px) {
+    .header .header-text {
+        padding: 0 20px 0 20px;
+    }
+    .header .header-text .title {
+        font-size: 30px;
+    }
+    .header .header-text .sub-title {
+        font-size: 20px;
+    }
+}
+
+/* Header Ends */
+
+/* Footer Starts */
+
+.footer {
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+}
+
+.footer-text {
+    color: #39ff14;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer-text-left a {
+    position: absolute;
+    color: #39ff14;
+    float: left !important;
+    left: 50px;
+    text-align: left;
+    bottom: 20px;
+}
+
+.footer-text-left a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    font-size: 20px;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+i {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 600px) {
+    .footer-text {
+        font-size: 10px;
+    }
+    .social-icons {
+        font-size: 15px;
+    }
+}
+
+/* Footer Ends */
+
+/* About Section Starts */
+
+.about {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.about .about-title {
+    color: #ef2929;
+    margin: -1px;
+}
+
+.about .about-text p {
+    color: #ffc107;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.about-text span {
+    color: #34e2e2;
+}
+
+.about-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: 50px;
+    padding: 0;
+}
+
+.table-mobile-display {
+    display: none;
+}
+
+/*  */
+
+/* Project Page CSS Starts */
+
+.projects {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    z-index: 1000;
+}
+
+.projects ul {
+    list-style: none;
+}
+
+.projects li {
+    display: inline-block;
+    border: 2px solid #39ff14;
+    border-radius: 10px;
+    margin: 10px;
+    width: 280px;
+    height: 300px;
+    background: #062703;
+    ;
+    padding: 10px;
+}
+
+.projects li:hover {
+    transform: translate(0px, -5px);
+}
+
+.insideContainer {
+    display: grid;
+}
+
+.logo {
+    fill: #f0ff0f;
+    height: 40px;
+}
+
+.logo a {
+    cursor: pointer;
+}
+
+.ext {
+    float: right;
+    width: 20px;
+    height: auto;
+    fill: #767474;
+    ;
+    cursor: pointer;
+}
+
+.folder {
+    float: left;
+    width: 40px;
+    height: auto;
+}
+
+.projectTitle {
+    color: #ffffff;
+    display: block;
+    font-size: 20px;
+    padding: 10px 0px;
+    font-weight: 900;
+    height: 35px;
+}
+
+.projectDescription {
+    color: #39ff14;
+    font-size: 15px;
+    height: 190px;
+}
+
+.projectFooter {
+    color: #f0ff0f;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 600px) {
+    .projects {
+        margin-left: 10px;
+        margin-right: 50px;
+    }
+    .projects li {
+        width: 85%;
+        height: auto;
+        margin: 10px;
+    }
+    .projectTitle {
+        font-size: 15px;
+        height: 25px;
+    }
+    .projectDescription {
+        font-size: 12px;
+        height: auto;
+    }
+    .projectFooter {
+        font-size: 10px;
+        padding-top: 10px;
+    }
+}
+
+/* Project CSS Ends */
+
+/* ssh */
+
+.ssh h1 {
+    text-align: center;
+}
+
+.ssh button {
+    background-color: #0e141b;
+    border: #0e141b;
+    color: #39ff14;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    .ssh button {
+        display: none;
+    }
+}
+
+/* ssh ends */
+
+/* Overall CSS */
+
+@media screen and (max-width: 600px) {
+    .about {
+        margin-top: 20px;
+    }
+    .about-table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-left: 10px;
+        padding: 0;
+        color: #ffc107;
+        margin-bottom: 30px;
+    }
+    .display-none {
+        display: none;
+    }
+    .footer-text-left {
+        display: none;
+    }
+    .table-mobile-display {
+        display: block;
+    }
+}
+
+/* Overall CSS Ends */
+
+/* Timeline CSS */
+
+.timeline {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.timeline .timeline-header {
+    color: #ef2929;
+    margin: -1px;
+}
+
+.timeline .timeline-card {
+    border-radius: 10px;
+    margin: 10px;
+    width: 85vw;
+    height: auto;
+    background: #062f02;
+    ;
+    border: 2px solid #39ff14;
+    border-radius: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.timeline-card-header h2 {
+    color: #ffffff;
+    font-size: 20px;
+    padding: 15px 0px;
+    font-weight: 900;
+    padding-left: 10px;
+    height: 15px;
+}
+
+.timeline-position {
+    color: #39ff14;
+    font-size: 10px;
+    padding-left: 0px !important;
+}
+
+.timeline-card-header p {
+    color: #39ff14;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+.timeline-date {
+    color: #39ff14;
+    font-size: 15px;
+    height: 35px;
+    position: absolute;
+    right: 20px;
+}
+
+.timeline-card-body {
+    color: #ffffff;
+    font-size: 12px;
+    padding-left: 10px;
+    overflow: auto;
+    padding-bottom: 10px;
+}
+
+/* For mobile screens */
+
+@media screen and (max-width: 950px) {
+    .timeline {
+        margin-left: 10px;
+        margin-right: 50px;
+    }
+    .timeline .timeline-card {
+        width: 80vw;
+        height: auto;
+        margin: 10px;
+    }
+    .timeline .timeline-card-header h2 {
+        font-size: 15px;
+        height: 25px;
+    }
+    .timeline .timeline-card-header .timeline-date {
+        font-size: 12px;
+        height: auto;
+    }
+    .title {
+        font-size: 12px;
+        padding-left: 10px;
+    }
+}

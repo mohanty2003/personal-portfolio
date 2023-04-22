@@ -1,0 +1,122 @@
+<!-- Initial File -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-74TPRJLCSV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-74TPRJLCSV');
+    </script>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,  initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    <!-- Meta Contents -->
+    <meta property="og:title" content="Smrutiranjan Mohanty">
+    <meta property="og:description" content="Website of Smrutiranjan Mohanty.">
+    <meta property="og:description" content="Machine Learning | Web UI | Django | IoT">
+    <meta property="og:image" content="https://res.cloudinary.com/saswatsamal/image/upload/v1648646320/saswatsamal/og_ot0k2n.png">
+    <meta property="og:url" content="https://srmohanty.com">
+    <meta name="keywords" content="Smrutiranjan, Smrutiranjan Mohanty, Mohanty, Smrutiranjan PMEC, Smrutiranjan GitHub,Smrutiranjan Instagram, Smrutiranjan Bhubaneswar, Machine Learning, IoT, Arduino, Robotics, Web UI">
+    <meta name="author" content="Smrutiranjan Mohanty">
+    <meta name="description" content="Hi, I'm Smrutiranjan Mohanty, a student developer and community builder based out of Bhubaneswar.">
+    <meta name="robots" content="Hi, I'm Smrutiranjan Mohanty, a student developer and community builder based out of Bhubaneswar." />
+    <!-- CSS & Fonts -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css" />
+    <!-- Icons and Meta Images -->
+    <link rel="shortcut icon" href="https://res.cloudinary.com/saswatsamal/image/upload/v1646742453/saswatsamal/logo_kc6rnp.png" type="image/x-icon">
+    <!-- Title -->
+    <title>Smrutiranjan Mohanty</title>
+</head>
+
+<body onload="myFunction()" style="margin:0;">
+    <!-- Loader Ends -->
+    <section class="loading">
+        <div class="text-loader" id="loading">loading</div>
+    </section>
+    <!-- Loader Ends -->
+    <main id="myDiv">
+        <!-- Navbar Starts -->
+        <section class="navbar">
+            <div class="nav-left">
+                <div class="logo-text">
+                    Smrutiranjan Mohanty 🍃
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="nav-lists">
+                    <li class="list"><a href="./about.html">/about</a></li>
+                    <li class="list"><a href="./resume.html">/resume</a></li>
+                    <li class="list"><a href="./contact.html">/contact</a></li>
+                </div>
+            </div>
+        </section>
+        <!-- NavBar Ends -->
+        <!-- Header Starts -->
+        <section class="header">
+            <div class="header-image">
+                <!--<img src="https://res.cloudinary.com/dyahh5tbh/image/upload/v1677590314/img_sfhbsi.jpg" alt="avataar">-->
+            </div>
+            <div class="header-text">
+                <h1 class="title">Hi, I'm Smrutiranjan Mohanty</h1>
+                <h2 class="sub-title">I'm a Student Developer based in Bhubaneswar.</h2>
+            </div>
+        </section>
+        <!-- Header Ends -->
+        <!-- Footer Starts -->
+        <section class="footer">
+            <div class="footer-text">
+                <p class="hacker-text" id="ip-address"></p>
+                <p class="hacker-text" id="location-data"></p>
+                <a href="https://www.github.com/mohanty2003" target="blank" class="social-icons"><i class="fa-brands fa-github" alt="github/saswatsamal"></i></a>
+                <a href="https://www.linkedin.com/in/srmohanty48" target="blank" class="social-icons"><i class="fa-brands fa-linkedin" alt="linkedin/saswatsamal"></i></a>
+                <a href="https://www.twitter.com/Smrutiranjan_48" target="blank" class="social-icons"><i class="fa-brands fa-twitter" alt="twitter/saswatsamal"></i></a>
+                <a href="https://www.instagram.com/chiku.jpg" target="blank" class="social-icons"><i class="fa-brands fa-instagram" alt="instagram/saswatsamal"></i></a>
+            </div>
+        </section>
+        <!-- Footer Ends -->
+
+    </main>
+    <!-- Script -->
+    <script src="https://kit.fontawesome.com/e0f5cfa995.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./JS/script.js"></script>
+    <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 2000);
+        }
+
+        function showPage() {
+            document.getElementById("loading").style.display = "none";
+            document.getElementById("myDiv").style.display = "inherit";
+        }
+    </script>
+    <script>
+        $(document).ready(function() {
+
+            getDetails();
+
+            function getDetails() {
+                $.getJSON("https://ipapi.co/json/", function(ip) {
+                    $("#ip-address").html("Your IP is: " + ip.ip + " by " + ip.org + '.');
+                    $("#location-data").html("You are located at " + ip.city + ", " + ip.country_name + '.');
+                });
+
+            }
+        });
+    </script>
+</body>
+
+</html>
