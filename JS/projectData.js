@@ -11,7 +11,7 @@ const projectData = [{
     projectFooter: "Linktree",
 },
 {
-    projectLink: "https://github.com/mohanty2003/Personal-Portfolio",
+    projectLink: "https://github.com/mohanty2003/personal-portfolio",
     projectName: "Personal Portfolio Website",
     projectDescription: "The website of mine completely built using HTML and CSS. Utilizes a terminal design to make the website look clean and simple. There are some interesing things like it displays the user's IP and location.",
     projectFooter: "HTML, CSS, JavaScript",
@@ -20,6 +20,12 @@ const projectData = [{
     projectLink: "https://github.com/smartinternz02/SI-GuidedProject-56850-1663750594",
     projectName: "SmartInternz Project On Android App",
     projectDescription: "This android app is a Grocery Listing App, just like a todo list app",
+    projectFooter: "java, kotlin, Android Studio",
+},
+{
+    projectLink: "https://github.com/mohanty2003/grocery-listing-app",
+    projectName: "Grocery Listing app",
+    projectDescription: "This android app is a Grocery Listing App, just like a todo list app. Here we can add, delete, and add quantity of the item in this apk",
     projectFooter: "java, kotlin, Android Studio",
 }
 ];
